@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clon Google</title>
+  <style>
+body {
+    font-family: 'Roboto', sans-serif;
+      background-color: #202124 
+    }
+    #search-container {
+      margin: 100px auto;
+      text-align: center;
+    }
+    #search-box {
+      width: 500px;
+      padding: 10px 40px 10px 40px;
+      border: 1px solid #ccc;
+      border-radius: 25px;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+      font-size: 18px;
+      outline: none;
+      background:  
+      url('https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Google_Magnifying_Glass.svg/2048px-Google_Magnifying_Glass.svg.png') no-repeat 10px center, /* Left side image */
+      url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.iconfinder.com%2Ficons%2F7123011%2Fgoogle_mic_icon&psig=AOvVaw02PaX_WbCH5Ge70jv_XFlq&ust=1708406298355000&source=images&cd=vfe&opi=89978449&ved=0CBQQjhxqFwoTCLCcu8bTtoQDFQAAAAAdAAAAABAE') no-repeat right 10px center; /* Right side image */
+      background-size: 25px 25px;
+    }
+    
+#search-container:hover #search-box {
+  background-color: #303134; /* Este mete el hover del searchbox */
+}
+        #search-btn {
+      margin-top: 30px;
+      padding: 10px 20px;
+      background-color: #303134;
+      color: #fff;
+      border: none;
+      border-radius: 2px;
+      cursor: pointer;
+      font-size: 13px;
+      transition: background-color 0.3s;
+    }
+    #search-btn:hover {
+      background-color: #696969;
+    }
+    
+    #upper-right-image {
+      position: fixed; 
+      top: 1px; 
+      right: 10px; 
+      z-index: 999; 
+    }
+    #upper-right-links a {
+      margin-right: 1px; 
+      text-decoration: none; 
+      color: rgb(255, 255, 255); 
+    }
+    #upper-right-links a:hover {
+  text-decoration: underline; /* Este es el hover de los links */
+}
+    a {
+  color: white; /* Color para que no aparezcan morados */
+  text-decoration: none; /* Sin underline */
+}
+
+a:hover {
+  color: white;
+  text-decoration: underline; /* quita el underline de los links del footer */
+}
+
+a:visited {
+  color: white; /* Deja los links blancos cuando se hace click en ellos */
+}
+    footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #171717;
+  color: white;
+  font-size: 13px;
+  padding: 10px;
+}
+.Mexico {
+  margin-bottom: 10px; 
+}
+.left-links {
+  display: flex;
+}
+
+.right-links {
+  display: flex;
+}
+
+.left-links > div,
+.right-links > div {
+  margin-right: 10px;
+}
+
+.left-links > div:last-child,
+.right-links > div:first-child {
+  margin-right: 10px;
+}
+    
+  </style>
+</head>
+<body>
+  <main>
+    <section>
+<div id="upper-right-links">
+  <a href="https://www.google.com/imghp" target="_blank">Images</a>
+  <a href="https://mail.google.com/" target="_blank">Gmail</a>
+  </div>
+  <div id="upper-right-image">
+    <img src="https://www.svgrepo.com/show/451924/view-app-grid.svg" alt="App Grid Icon" width="40" height="40">
+     </div>
+    </section>
+    <section>
+    <div id="search-container">
+    <img src="https://www.google.com/intl/en_ALL/images/branding/googlelogo/2x/googlelogo_light_color_272x92dp.png" alt="Logo" width="272" height="92">
+    <form action="https://www.google.com/search" method="GET">
+      <input type="text" name="q" id="search-box" autofocus>
+      <br>
+      <input type="submit" value="Buscar con Google" id="search-btn">
+      <input type="submit" value="Voy a tener suerte" id="search-btn">
+    </form>
+  </div>
+</section>
+</main>
+<footer>
+  <div class="Mexico">México</div>
+  <div class="links-container">
+    <div class="left-links">
+      <div class="Sobre-Google"><a href="https://about.google/?utm_source=google-MX&utm_medium=referral&utm_campaign=hp-footer&fg=1">Sobre Google</a></div>
+      <div class="Publicidad"><a href="https://ads.google.com/intl/es-419_mx/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Publicidad</a></div>
+      <div class="Negocios"><a href="https://smallbusiness.withgoogle.com/intl/es-419_mx/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google&utm_medium=ep&utm_campaign=google_hpbfooter&utm_content=google_hpbfooter&gmbsrc=ww-ww-et-gs-z-gmb-s-z-u~sb-g4sb_srvcs-u&c=MX#!/">Negocios</a></div>
+      <div class="Cómo-funciona-la-Búsqueda"><a href="https://www.google.com/search/howsearchworks/?fg=1">Cómo funciona la Búsqueda</a></div>
+    </div>
+    <div class="right-links">
+      <div class="Privacidad"><a href="https://policies.google.com/privacy?hl=es-419&fg=1">Privacidad</a></div>
+      <div class="Condiciones"><a href="https://policies.google.com/terms?hl=es-419&fg=1">Condiciones</a></div>
+      <div class="Preferencias"><a href="https://www.google.com/preferences?hl=es-419&fg=1">Preferencias</a></div>
+    </div>
+  </div>
+</footer>
+  </body>
+</html>
